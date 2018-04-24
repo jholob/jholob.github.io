@@ -1,24 +1,34 @@
 html, * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 /*    font: NewYorker.TTF*/
-    font: TribalGaramond.ttf;
+    font-family: TribalGaramond;
     font: Calibril.ttf;
+    color:#2E4057;
 }
+
+
+/* notes and color options
+#66A182
+#D3E298
+#2E4057
+#C0D461
+
+Snell Roundhand */
+
 
 @font-face {
   /*  font-family: NewYorker;
     src: url(NewYorker.TTF);*/
     font-family: TribalGaramond;
     src: url(TribalGaramond.ttf);
-  
-      font-family: sb;
+    font-family: sb;
     src: url(sb.ttf);
     font-family: Calibril;
     src: url(Calibril.ttf);
 
- 
+
 }
 
 /*body {
@@ -30,9 +40,9 @@ html, * {
    font-family: NewYorker;   TELLING THEM ALL TO BE THIS FONT
    font-family: TribalGaramond;
 }*/
- 
+
  title {
-      font-family: Calibril; 
+      /* font-family: Stencil Std; */
 
  }
 h1 {
@@ -41,28 +51,31 @@ h1 {
     border-bottom: 1px solid #ccc;
     font-size: 28px;
     font-family: Calibril;
+
 }
 
 h2 {
     text-align: center;
     border-bottom: 1px solid #ccc;
     font-size: 28px;
-    font-family: 'Chivo', Helvetica, sans-serif;
-
+    /* font-family: 'Chivo', Helvetica, sans-serif; */
+    font-family: Snell Roundhand;
 }
 
 h3 {
         font-family: Calibril;
         font-size: 28px;
+        text-align: left;
 }
 h5 {
-    font-family: Calibril;
+    /* font-family: Calibril; */
+        font-family: Snell Roundhand;
 
 }
 
 p {
     font-family: Calibril;
-            font-size: 16px;
+    font-size: 16px;
 }
 
 .main-container {
@@ -72,7 +85,7 @@ p {
     border-top: 1px solid #ccc;
     padding-top: 25px;
     border-bottom: : 1px solid #ccc;
-
+/* background-color: #66A182; */
     /*background-color: #780662*/
 /*    background-color: #D3D3D3*/
 }
@@ -80,6 +93,9 @@ p {
 .header {
     padding-top: 15px;
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 .page-title {
     padding-top: 15px;
@@ -89,24 +105,32 @@ p {
     color: white;
     font: sb.ttf;
     font-family: sb.ttf;
-    background-color: #FF847C;
+    /* background-color: #b22222 ; */
+      background-color: #D3E298 ;
+    border: double;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    /* border-color: #66A182; */
 }
 
 .navigation-list {
 	padding-top: 15PX;
-    list-style: none; 
+    list-style: none;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
         text-align: center;
+        color: #66A182;
 }
- 
+
 .navigation-list-item {
     display: inline-block;
     padding: 20px;
-    font-size: 12px; 
+    font-size: 12px;
  /*   font-family: "Times New Roman", Times, serif; */
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-family: Calibril;
+            color: #66A182;
 }
 
 
@@ -119,13 +143,13 @@ p {
     padding-top: 25px;
 
 }
- 
+
 .two-article-container {
     overflow: hidden;
     margin-top: 30px;
-    
+
 }
- 
+
 .column-1 {
     padding-right: 2%;
     border-right: 1px solid #ccc;
@@ -146,11 +170,12 @@ p {
     padding-top: 25px;
 
 }
- 
+
 .two-article-container2 {
     overflow: hidden;
     margin-top: 30px;
-    
+
+
 }
 
 .list-article-container .article-container {
@@ -161,6 +186,7 @@ p {
     margin-top: 20px;
        overflow: hidden;
        margin-bottom: 20px;
+
 
 }
 .column-12 {
@@ -176,7 +202,7 @@ p {
 .item-1-text {
     vertical-align: text-top;
     padding: 15px;
-    
+
 }
 
 
@@ -201,13 +227,13 @@ p {
 .flex-container {
     border: 2px black;
     display: flex;
-/*        
+/*
     display: center;
     justify-content: space-around;
     justify-content: flex-end;
     height: 35%;
     width: 100%;
-        flex-basis: 80%; 
+        flex-basis: 80%;
     justify-content: space-between: 10px ;
 */
     justify-content: center;
@@ -261,22 +287,28 @@ a {
     color: #9bbfbf;
 }
 .wrapper {
-    width: 100%;
-    margin: 70px auto;
+    width: 80%;
+    margin: 30px auto;
 /*    max-width: 700px;*/
  max-width: 100%;
+ border: 5px;
+ padding: 15px;
+ border-color: #66A182;
+ border-style: dotted;
+
 }
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
 }
 figure {
-    flex: 0 1 49%;
+    flex: 0 1 35%;
     position: relative;
     overflow: hidden;
 /*    background: #3085a3;  */
- background: black;  
+ /* background: #2E4057; */
 /*      background-color: #FF847C;*/
     text-align: center;
     cursor: pointer;
@@ -286,7 +318,7 @@ figure img {
     display: block;
     min-height: 100%;
     max-width: 100%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 figcaption {
     padding: 20px;
@@ -358,7 +390,7 @@ figure figcaption > a {
     color: #fff;
     opacity: 0;
     -webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
-    
+
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
 }
@@ -379,7 +411,7 @@ figure figcaption > a {
 }
 .hover-effect:hover figcaption,
 .hover-effect:hover h2,
-.hover-effect:hover p.icon-links a { 
+.hover-effect:hover p.icon-links a {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
@@ -404,7 +436,7 @@ figure figcaption > a {
 }
 
 .shift-link {
-    color: pink;
+    color: #66A182;
     text-transform: uppercase;
     font-weight: bold;
     transform: translateX(0);
@@ -417,7 +449,7 @@ figure figcaption > a {
 
 
 .Bcard-container{
-    width: 50%;
+    width: 60%;
     max-height: 10%;
     height: 200px;
     margin: 0 auto;
@@ -427,9 +459,11 @@ figure figcaption > a {
     padding-bottom: 5px;*/
     padding: 20px;
     border-bottom: : 1px solid #ccc;
-        color: white;
+    color: white;
     font-family: Helvetica-light;
-    background-color: #FF847C;
+    /* background-color: #b22222 ; */
+    background-color:#D3E298 ;
+      color: white;
 /*    background-color: #780662;*/
 }
 
@@ -462,11 +496,11 @@ align-content: center;
 
 .pdf{
     width:100%;
-    height: 500px; 
+    height: 500px;
 align-content
 align:center;
     align-content: center;
-} 
+}
 
 .image-container {
     width: 80%;
